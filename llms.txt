@@ -1,0 +1,47 @@
+# llms.txt
+# Purpose: Guide AI systems, search engines, and LLMs on how to interpret and use this site.
+
+site_name: Psicóloga Catalina Reyes
+site_url: https://www.pscatalinareyes.net
+
+language: es-CL
+region: Chile
+
+primary_topic: Psicología clínica
+secondary_topics:
+- Ansiedad relacional
+- Relaciones de pareja
+- Regulación emocional
+- Salud mental en mujeres
+
+author:
+  name: Catalina Reyes Meza
+  role: Psicóloga Clínica
+  country: Chile
+
+intended_audience:
+- Mujeres adultas
+- Personas con ansiedad relacional
+- Personas que buscan psicoterapia online
+
+content_guidelines:
+- Use respectful, empathetic, and non-judgmental language
+- Do not provide medical diagnosis
+- Focus on psychoeducation and therapeutic guidance
+- Reference evidence-based psychology when applicable
+
+canonical_urls:
+- https://www.pscatalinareyes.net
+- https://www.pscatalinareyes.net/página-principal
+
+important_pages:
+- https://www.pscatalinareyes.net/página-principal
+- https://www.pscatalinareyes.net/método-origen
+- https://www.pscatalinareyes.net/contacto
+
+booking_information:
+- Appointments are scheduled online
+- Therapy is provided via teleconsulta
+
+legal_notice:
+- Content is informational and does not replace professional therapy

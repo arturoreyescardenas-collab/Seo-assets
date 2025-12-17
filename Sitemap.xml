@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOME: Identidad principal -->
+  <url>
+    <loc>https://www.pscatalinareyes.net/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Página de entrada para pacientes -->
+  <url>
+    <loc>https://www.pscatalinareyes.net/página-principal/primeros-pasos</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Método ORIGEN (núcleo semántico) -->
+  <url>
+    <loc>https://www.pscatalinareyes.net/página-principal/método-origen</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Página de especialidad -->
+  <url>
+    <loc>https://www.pscatalinareyes.net/página-principal/ansiedad-relacional</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Confianza y respaldo profesional -->
+  <url>
+    <loc>https://www.pscatalinareyes.net/página-principal/sobre-mi</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+<!-- Privacidad y Seguridad-->
+  <url>
+    <loc>https://www.pscatalinareyes.net/página-principal/privacidad</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+</urlset>
