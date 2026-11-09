@@ -24,11 +24,20 @@ export const catalina={name:'video-catalina',scenes:[
  {dur:7,type:'months',head:'Haciendo de <b>octubre</b>',sub:'el mes cuando más caminos se cruzaron con el tuyo',big:15,
   body:'consultas en un solo mes. Y aun así, <b>estuviste ahí para cada una</b>',
   months:[['ENE',2],['FEB',2],['MAR',10],['ABR',11],['MAY',14],['JUN',9],['JUL',7],['AGO',13],['SEP',10],['OCT',15]]},
+ {dur:8,type:'tl',small:1,head:'Encontraste nuevas formas de abrir tu <b>consulta al mundo</b>',headTop:340,top:640,items:[
+  {icon:'search',title:'1.338 apariciones',body:'en búsquedas de Google',d:1.0,gap:30},
+  {icon:'home',title:'867',body:'visitas a tu perfil de Encuadrado este año',d:2.4,gap:30},
+  {icon:'users',hl:1,big:22,body:'pacientes llegaron por primera vez a través de tu <b>perfil público de Encuadrado</b>',d:4.0}]},
+ {dur:5.5,type:'tl',head:'<b style="font-size:120px;font-weight:800">enc.do</b><br>abrió una nueva puerta',headTop:480,top:900,items:[
+  {icon:'click',hl:1,big:26,body:'visitas a tu perfil llegaron desde tu <b>tarjeta digital</b>',d:1.4}]},
  {dur:8.5,type:'tl',small:1,head:'Catalina, tu tiempo <b>rindió más</b>',headTop:330,top:560,items:[
   {icon:'mic',title:'Transcriptor',body:'Te dio <b>17 horas</b> más presente en tus sesiones',d:0.8},
   {icon:'calc',title:'Agenda y recordatorios',body:'Te ahorró <b>13 horas</b> agendando y confirmando',d:2.0},
   {icon:'case',title:'Trabajo administrativo',body:'Te ahorró <b>3 horas</b> de papeleo',d:3.2,gap:20},
   {icon:'clock',hl:1,big:33,unit:'hrs libres',body:'Equivale a <b>4 jornadas</b> de trabajo que volvieron a ser tuyas',d:4.6}]},
+ {dur:9,type:'tl',head:'Catalina,<br>detrás de cada peso hay <b>una persona que confió en ti</b>',headTop:330,top:760,items:[
+  {icon:'dollar',hl:1,big:2163000,pre:'$',bs:112,body:'fue lo que <b>generó tu trabajo</b> este año',d:1.8,gap:60},
+  {icon:'trend',big:500,pre:'+',suf:'%',bs:170,body:'creciste respecto al año pasado. Tu consulta <b>no solo avanzó, creció</b>',d:4.6}]},
  {dur:6,type:'card',head:'Este fue mi año <b>con Encuadrado</b>',headTop:380,...card(640)},
 ]};
 
