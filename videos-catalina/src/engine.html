@@ -62,7 +62,7 @@ b{font-weight:700}
 .card .k{margin-top:14px;font-size:40px;font-weight:600;letter-spacing:.04em;color:rgba(255,255,255,.75)}
 .card .ft{display:flex;justify-content:space-between;align-items:center;font-size:44px;font-weight:700}
 .card .ft span:first-child{font-weight:500;color:rgba(255,255,255,.8);letter-spacing:.02em}
-.ph{position:absolute;left:50%;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,.85);box-shadow:0 0 90px rgba(130,180,255,.55);margin-left:-130px}.ph img,.av img{width:100%;height:100%;object-fit:cover;transform:scale(1.3)}.av{width:128px;height:128px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,.85);flex:none}.card .nm{display:flex;align-items:center;gap:32px}.ctt{position:absolute;left:70px;right:70px;text-align:center}
+.ph{position:absolute;left:50%;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,.85);box-shadow:0 0 90px rgba(130,180,255,.55);margin-left:-130px}.ph img,.av img{width:100%;height:100%;object-fit:cover}.bgph{position:absolute;inset:0;background:url(catalina-full.jpg) 50% 12%/cover}.bgph:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,36,89,.45) 0%,rgba(27,36,89,0) 28%,rgba(30,45,120,.5) 58%,rgba(27,36,89,.96) 100%)}.hero.b{top:1230px;text-align:center}.av{width:128px;height:128px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,.85);flex:none}.card .nm{display:flex;align-items:center;gap:32px}.ctt{position:absolute;left:70px;right:70px;text-align:center}
 .ctt .a{font-size:74px;font-weight:300;line-height:1.2}.ctt .a b{font-weight:800}
 .ctt .h{margin-top:34px;display:inline-block;font-size:56px;font-weight:700;padding:22px 52px;border-radius:999px;background:#f3f6ff;color:#1d2b86}
 </style></head><body><div id="stage"></div>
@@ -100,8 +100,9 @@ function build(c){
   const root=el('<div class="scene"></div>');stage.appendChild(root);
   const add=(h,d,cls)=>{const e=el(h);e.classList.add('it');e.dataset.d=d;root.appendChild(e);return e};
   if(sc.tag)add(`<div class="tag">${sc.tag}</div>`,0.1);
+  if(sc.bgphoto){const bg=el('<div class="bgph"></div>');root.appendChild(bg)}
   if(sc.photo)add(`<div class="ph" style="top:${sc.photo.top}px;width:${sc.photo.size}px;height:${sc.photo.size}px;margin-left:-${sc.photo.size/2}px"><img src="catalina.jpg"></div>`,0.1);
-  if(sc.type==='hero'){const h=el('<div class="hero '+(sc.center?'c':'')+'"></div>');root.appendChild(h);
+  if(sc.type==='hero'){const h=el('<div class="hero '+(sc.center?'c':'')+(sc.bgphoto?' b':'')+'"></div>');root.appendChild(h);
     sc.lines.forEach(l=>{const e=el(`<div class="${l.c||'l1'}">${l.h}</div>`);e.classList.add('it');e.dataset.d=l.d;h.appendChild(e)});}
   if(sc.type==='tl'){
     if(sc.head){const e=add(`<div class="head" style="top:${sc.headTop||430}px">${sc.head}</div>`,0.2)}
