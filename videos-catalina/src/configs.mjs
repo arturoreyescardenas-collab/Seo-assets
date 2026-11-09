@@ -49,7 +49,7 @@ export const social={name:'video-redes',scenes:[
  {dur:4,type:'stat',tag:'Mi 2026',icon:'pin',big:4,unit:'regiones',body:'Terapia online: mi voz llega <b>más lejos que nunca</b>'},
  {dur:4.4,type:'stat',tag:'Mi 2026',icon:'clock',big:17,unit:'hrs',body:'más presente en mis sesiones gracias a la <b>tecnología</b>'},
  {dur:6,type:'card',tag:'',...card(200),avatar:1,
-  cta:{top:1290,d:2.4,h:'Si estás pensando en empezar, <b>escríbeme</b>',handle:'@ps.catalinareyes'}},
+  cta:{top:1290,d:2.4,h:'Si estás pensando en empezar, <b>escríbeme</b>',handle:'@ps.catalinareyes',sub:'Instagram · TikTok'}},
 ]};
 
 // Más tiempo de lectura por lámina; el cierre queda más largo.

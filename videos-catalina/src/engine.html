@@ -64,7 +64,7 @@ b{font-weight:700}
 .card .ft span:first-child{font-weight:500;color:rgba(255,255,255,.8);letter-spacing:.02em}
 .ph{position:absolute;left:50%;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,.85);box-shadow:0 0 90px rgba(130,180,255,.55);margin-left:-130px}.ph img,.av img{width:100%;height:100%;object-fit:cover}.bgph{position:absolute;inset:0;background:url(catalina-full.jpg) 50% 12%/cover}.bgph:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,36,89,.45) 0%,rgba(27,36,89,0) 28%,rgba(30,45,120,.5) 58%,rgba(27,36,89,.96) 100%)}.hero.b{top:1230px;text-align:center}.av{width:128px;height:128px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,.85);flex:none}.card .nm{display:flex;align-items:center;gap:32px}.ctt{position:absolute;left:70px;right:70px;text-align:center}
 .ctt .a{font-size:74px;font-weight:300;line-height:1.2}.ctt .a b{font-weight:800}
-.ctt .h{margin-top:34px;display:inline-block;font-size:56px;font-weight:700;padding:22px 52px;border-radius:999px;background:#f3f6ff;color:#1d2b86}
+.ctt .s{margin-top:34px;font-size:46px;font-weight:500;letter-spacing:.04em;color:rgba(255,255,255,.9)}.ctt .h{margin-top:34px;display:inline-block;font-size:56px;font-weight:700;padding:22px 52px;border-radius:999px;background:#f3f6ff;color:#1d2b86}
 </style></head><body><div id="stage"></div>
 <script>
 const P={
@@ -128,7 +128,7 @@ function build(c){
     if(sc.type==='card'||sc.card){const cd=sc.card||sc;
     const e=add(`<div class="card" style="top:${cd.top}px"><div class="nm">${cd.avatar?'<div class="av"><img src="catalina.jpg"></div>':''}<span>${cd.name}</span></div><hr><div class="g">${cd.stats.map(s=>`<div><div class="v">${cnt(s.v,String(s.v).includes('.')?1:0)}${s.u?`<small>${s.u}</small>`:''}</div><div class="k">${s.k}</div></div>`).join('')}</div><hr><div class="ft"><span>${cd.foot}</span><span>${cd.year}</span></div></div>`,cd.d||0.9);}
     if(sc.head&&sc.type==='card')add(`<div class="head" style="top:${sc.headTop||520}px">${sc.head}</div>`,0.2);
-    if(sc.cta)add(`<div class="ctt" style="top:${sc.cta.top}px"><div class="a">${sc.cta.h}</div><div class="h">${sc.cta.handle}</div></div>`,sc.cta.d);
+    if(sc.cta)add(`<div class="ctt" style="top:${sc.cta.top}px"><div class="a">${sc.cta.h}</div><div class="h">${sc.cta.handle}</div>${sc.cta.sub?`<div class="s">${sc.cta.sub}</div>`:''}</div>`,sc.cta.d);
   }
   sc.t0=t0;t0+=sc.dur;
  });
