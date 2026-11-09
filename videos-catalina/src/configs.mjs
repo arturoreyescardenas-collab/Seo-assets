@@ -42,12 +42,12 @@ export const catalina={name:'video-catalina',scenes:[
 ]};
 
 export const social={name:'video-redes',scenes:[
- {dur:2.4,type:'hero',center:1,lines:[{h:'Este fue mi año',d:0.3},{h:'<b>en números</b>',d:0.9}]},
+ {dur:2.8,type:'hero',center:1,photo:{top:420,size:300},lines:[{h:'Este fue mi año',d:0.3},{h:'<b>en números</b>',d:0.9}]},
  {dur:3.8,type:'stat',tag:'Mi 2026',icon:'heart',big:26,body:'personas recorrieron <b>parte de su camino conmigo</b>'},
  {dur:3.8,type:'stat',tag:'Mi 2026',icon:'hour',big:90,unit:'hrs',body:'dedicadas a acompañar su bienestar. <b>3 días completos.</b>'},
  {dur:4,type:'stat',tag:'Mi 2026',icon:'star',big:'5.0',bs:300,unit:'/5.0 <span class="star">★</span>',body:'promedio en las <b>8 evaluaciones</b> que escribieron mis pacientes'},
  {dur:4,type:'stat',tag:'Mi 2026',icon:'pin',big:4,unit:'regiones',body:'Terapia online: mi voz llega <b>más lejos que nunca</b>'},
  {dur:4.4,type:'stat',tag:'Mi 2026',icon:'clock',big:17,unit:'hrs',body:'más presente en mis sesiones gracias a la <b>tecnología</b>'},
- {dur:6,type:'card',tag:'',...card(200),
+ {dur:6,type:'card',tag:'',...card(200),avatar:1,
   cta:{top:1290,d:2.4,h:'Si estás pensando en empezar, <b>escríbeme</b>',handle:'@ps.catalinareyes'}},
 ]};
