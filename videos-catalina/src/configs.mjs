@@ -51,3 +51,7 @@ export const social={name:'video-redes',scenes:[
  {dur:6,type:'card',tag:'',...card(200),avatar:1,
   cta:{top:1290,d:2.4,h:'Si estás pensando en empezar, <b>escríbeme</b>',handle:'@ps.catalinareyes'}},
 ]};
+
+// Más tiempo de lectura por lámina; el cierre queda más largo.
+catalina.scenes.forEach((s,i,a)=>{s.dur+=i===a.length-1?5:2});
+social.scenes.forEach((s,i,a)=>{s.dur+=i===a.length-1?4:(i===0?0.6:1.3)});
